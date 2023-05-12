@@ -82,11 +82,12 @@ def plot_roc_curve(tpr, fpr, scatter = True, ax = None):
     plt.ylabel("True Positive Rate")
     
     
-def plot_multiclass_roc_curve(classes, X_test, y_proba, y_test):
+def plot_multiclass_roc_curves(classes, categories, X_test, y_proba, y_test):
   # Plots the Probability Distributions and the ROC Curves One vs Rest
   plt.figure(figsize = (9, 5))
   bins = [i/20 for i in range(20)] + [1]
   #classes = AdaBoost.classes_
+  print(classes)
   roc_auc_ovr = {}
   for i in range(len(classes)):
       # Gets the class
