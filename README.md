@@ -14,8 +14,3 @@ The data will be provided in the format of Id, title, text, rating, the domain; 
 - Title- Title of the news article
 - text- Text mentioned inside the news article
 - our rating - class of the news article as false, partially false, true, other
-
-## Output data format
-
-- public_id- Unique identifier of the news article
-- predicted_rating- predicted class
